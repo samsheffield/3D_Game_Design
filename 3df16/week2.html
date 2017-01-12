@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D GAME DESIGN: FALL '16</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <div id="contentheader">
+                <h1><a href="index.html">3D GAME DESIGN: FALL '16</a></h1>
+                <ul>
+                    <li>Instructor: Sam Sheffield (<a href="mailto:ssheffield@mica.edu">ssheffield@mica.edu</a>)</li>
+                    <li>This Site (Short URL): <a href="http://tiny.cc/3df16">tiny.cc/3df16</a></li>
+                    <li>Online syllabus: <a href="docs/f16/Sheffield_Sam_3D_Game_Design_Fall16.pdf">syllabus.pdf</a></li>
+                    <li>Code repository: <a href="https://github.com/samsheffield/3D_Game_Design">github.com</a></li>
+                    <li>Unity C# Cheat Sheet: <a href="https://gist.github.com/samsheffield/96608e465091069d15fdaea29457ec85">gist.github.com</a></li>
+                </ul>
+            </div>
+            <h1>09/06: UNITY 3D INTRO, BASIC FIRST PERSON CONTROLLER</h1>
+            <h2>TODAY:</h2>
+            <p>Welcome everyone!</p>
+            <ol>
+                <li>Play Homework Games</li>
+                <li>3D Interface Tour</li>
+                <li>Creating Primitive Shapes</li>
+                <li>Lighting: Directional, Point, Spotlight</li>
+                <li>Adding Colored Materials</li>
+                <li>Manipulating the Skybox</li>
+                <li>Code: Basic First Person Controller (with Collision)</li>
+            </ol>
+            <p><strong>Update!: Demo project from class is available <a href="https://github.com/samsheffield/3D_Game_Design/releases/tag/fall16_1">here</a>.</strong> </p>
+        </div>
+        <div class="content">
+            <h2>PLAY HOMEWORK GAMES</h2>
+            <p>
+                30 minutes:
+               
+                <ul>
+                    <li>Launch your game's build on your own computer.</li>
+                    <li>Write down instructions, if necessary.</li>
+                    <li>Be sure to zip the Unity project folder and upload to your class Drive folder (link emailed over the weekend)</li>
+                </ul>
+            </p>
+            <h2>UNITY 3D: INTERFACE</h2>
+            <p>
+                Go over some important parts of the editor, relevant to 3D:
+               
+                <ul>
+                    <li>Scene view toggles: Shading mode, 2D/3D, lighting, skybox</li>
+                    <li>Scene navigation: Local/Global rotation, 3D view gizmo, Focus, Align to View (Camera)</li>
+                    <li>Lighting panel: Add it via Window menu</li>
+                </ul>
+            </p>
+            <h2>UNITY 3D: PRIMITIVES</h2>
+            <p>
+                Unity has a small selection of primitive forms which can be created in-editor*:
+               
+                <ul>
+                    <li>Planes, cubes, spheres, cylinders, capsules</li>
+                    <li>Adding, manipulating, focusing in scene</li>
+                    <li>*More can be found on the Asset Store. (Primitive Plus is $5)</li>
+                </ul>
+            </p>
+
+            <h2>UNITY 3D: LIGHTING</h2>
+            <p>
+                A look at some of Unity's basic realtime lighting options:
+               
+                <ul>
+                    <li>GI: Global Illumination</li>
+                    <li>Basic types: Directional, point, spotlight</li>
+                    <li>Positioning, color, intensity, casting shadows</li>
+                </ul>
+            </p>
+
+            <h2>UNITY 3D: COLOR MATERIALS</h2>
+            <p>
+                Adding color to an object using a custom material:
+               
+                <ul>
+                    <li>Create in Project: New Material</li>
+                    <li>Change color(Albedo), reflection, and smoothness</li>
+                    <li>Choose new material in an object's Mesh Renderer component (Material 0)</li>
+                    <li>Further editing can be done from object, but it will affect all others using that material</li>
+                </ul>
+            </p>
+
+            <h2>UNITY 3D: SKYBOX</h2>
+            <p>
+                The skybox can be manipulated, or removed, in the Lighting panel:
+               
+                <ul>
+                    <li>Open Lighting > Scene</li>
+                    <li>Under Environment Lighting you have the ability to change the Skybox and ambient lighting</li>
+                    <li>New Skyboxes are added as textures, or procedurally created, as if a Material (Choose Skybox as type instead of Standard)</li>
+                </ul>
+            </p>
+
+            <h2>UNITY 3D CODE: PROGRAMMING A BASIC FIRST PERSON CONTROLLER</h2>
+            <p>
+                This will be basic WASD movement + mouse look behavior (we will replace this with more sophisticated options):
+               
+                <ul>
+                    <li>Capsule with child camera</li>
+                    <li>Unity's CharacterController</li>
+                    <li>Two scripts working together: MouseLook, FirstPersonController</li>
+                    <li>Simulating physics with CharacterController (Rigidbody incompatible)</li>
+                </ul>
+            </p>
+
+        </div>
+        <div class="content">
+            <h1>HOMEWORK</h1>
+            <h2>CHIAROSCURO (DUE START OF CLASS NEXT WEEK)</h2>
+            <p>
+                <em><a href="https://www.google.com/search?q=chiaroscuro&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjUyr2RlfrOAhXSdSYKHUIAAVQQ_AUICCgB">Chiaroscuro</a> is the use of contrasts of light to achieve a sense of volume in modelling three-dimensional objects and figures.</em>
+            </p>
+            Working with only un-textured primitives and lighting, create a virtual form/structure/sculpture that can be explored by moving around, under, or through it.
+            </p>
+           
+            <p>
+                Technical requirements:
+               
+                <ul>
+                    <li>Greyboxing: Work fast, in-engine assets only (Primitive Plus Unity Asset or equivalent is OK too, but no imported models!)</li>
+                    <li>Think structurally, not spatially, for this one.</li>
+                    <li>Use of colored materials is OK</li>
+                    <li>Work from sketches</li>
+                </ul>
+
+                Some possible inspiration:
+               
+                <ul>
+                    <li><a href="https://www.google.com/search?q=chiaroscuro&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjUyr2RlfrOAhXSdSYKHUIAAVQQ_AUICCgB">Chiaroscuro techniques</a> in fine art &amp; film</li>
+                    <li>Large-scale modernist sculpture such as <a href="https://www.google.com/search?q=moondog+tony+smith&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjMyLv04vrOAhWPNx4KHfCkAbMQ_AUIBigB">Tony Smith's Moondog</a> (1964) or <a href="https://www.google.com/search?q=richard+serra+torqued+ellipse+iv&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjMmtnZmvrOAhUD4yYKHc7oCroQ_AUICCgB">Richard Serra's Torqued Ellipse IV</a></li>
+                    <li>Architectural use of light &amp; shadow such as <a href="https://www.google.com/search?q=shadows+games&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiyveGUm_rOAhWLMSYKHXO9BEQQ_AUICCgD#safe=active&tbm=isch&q=shadows+architecture">these</a></li>
+                    <li>Games such as <a href="https://www.google.com/search?q=shadows+games&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiyveGUm_rOAhWLMSYKHXO9BEQQ_AUICCgD#safe=active&tbm=isch&q=echochrome+2">Echochrome 2</a>, <a href="https://www.google.com/search?q=shadows+games&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiyveGUm_rOAhWLMSYKHXO9BEQQ_AUICCgD#safe=active&tbm=isch&q=kairo+game">Kairo</a>, <a href="https://www.google.com/search?q=shadows+games&safe=active&espv=2&biw=1920&bih=950&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiyveGUm_rOAhWLMSYKHXO9BEQQ_AUICCgD#safe=active&tbm=isch&q=unfinished+swan">Unfinished Swan</a>, etc.</li>
+                </ul>
+            </p>
+            <p>
+                Upload project + build to class Drive folder by the start of class.
+           
+            </p>
+            <p>
+                Good Luck!
+           
+            </p>
+
+            <h2>PLAY: EARLY 3D CLASSICS</h2>
+            <p>1/2 the class plays one, 1/2 plays the other. You do not need to complete your assigned game, but please play it for at least one hour. Let's Play videos are not an acceptable substitution.</p>
+            <p>
+                These will be installed on the PC in the IA lounge (Log in with your MICA credentials). Instruction manuals will be in a folder on the shelf in the lounge.
+               
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Ultima_Underworld:_The_Stygian_Abyss">Ultima Underworld: The Stygian Abyss</a> ($6 on GOG)</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)">Doom</a> ($6 on GOG)</li>
+                </ul>
+            </p>
+            <h2>WRITING: GAMEPLAY + EXPERIENCE (DUE START OF CLASS NEXT WEEK)</h2>
+            <p>
+                For your assigned game:
+               
+                <ul>
+                    <li>Pick one mechanic, dynamic, or aesthetic which you feel is successfully handled by the game (please refer to <a href="http://samsheffield.com/mica/gp2s16/docs/mda.pdf">MDA framework</a> for details)</li>
+                    <li>Explain how your choice functions in the game and why it seems like an important, or interesting, design choice to you.</li>
+                    <li>Describe your experience playing this game. Does anything surprise you? How does it differ from the modern games which it inspired?</li>
+                    <li>250-500 words, any digital format, uploaded to class Drive.</li>
+                </ul>
+            </p>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

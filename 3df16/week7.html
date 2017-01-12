@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D GAME DESIGN: FALL '16</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <div id="contentheader">
+                <h1><a href="index.html">3D GAME DESIGN: FALL '16</a></h1>
+                <ul>
+                    <li>Instructor: Sam Sheffield (<a href="mailto:ssheffield@mica.edu">ssheffield@mica.edu</a>)</li>
+                    <li>This Site (Short URL): <a href="http://tiny.cc/3df16">tiny.cc/3df16</a></li>
+                    <li>Online syllabus: <a href="docs/f16/Sheffield_Sam_3D_Game_Design_Fall16.pdf">syllabus.pdf</a></li>
+                    <li>Code repository: <a href="https://github.com/samsheffield/3D_Game_Design">github.com</a></li>
+                    <li>Unity C# Cheat Sheet: <a href="https://gist.github.com/samsheffield/96608e465091069d15fdaea29457ec85">gist.github.com</a></li>
+                </ul>
+            </div>
+            <h1>10/11: MIDTERM PROJECT: PITCHES, PLAYTESTING, &amp; LIGHTS</h1>
+            <h2>TODAY:</h2>
+            <p>Good morning</p>
+            <ol>
+                <li>Finish Midterm Project pitching (2 groups)</li>
+                <li>Midtrem project playtesting</li>
+                <li>More lighting</li>
+            </ol>
+
+            <h2>MIDTERM PROJECT: PLAYTESTING</h2>
+            <p>Playtesting session</p>
+            <ul>
+                <li>Work with your group to prepare 3 <em>specific</em> questions for playtesters.</li>
+                <li>One member from the group must remain with game and observe/question playtesters (switch roles)</li>
+                <li>Don't disrupt playtesters.</li>
+                <li>Discuss as a group</li>
+            </ul>
+
+
+            <h2>MIDTERM PROJECT WORK SESSION</h2>
+            <p>You will have most of the morning to work with your group.</p>
+            <ul>
+                <li>I will meet with each group to review progress.</li>
+                <li>Get some work done</li>
+            </ul>
+
+            <h2>MORE LIGHTING</h2>
+            <p>Demo more lighting-specific topics</p>
+            <ul>
+                <li>Reminder: Static GameObjects &amp; Global Illumination</li>
+                <li>Normal maps</li>
+                <li>Emissive materials</li>
+                <li>Lighting cookies</li>
+                <li>Image Effects</li>
+            </ul>
+
+            <p>LIGHTS (GLOBAL ILLUMINATION)</p>
+            <ul>
+                <li>REMEMBER: Non-moving geometry (avoid setting very large, or very complex gameobjects to static!) and lighting should be set to Static in the top-right corner of the Inspector.</li>
+                <li>If you are working on a modest laptop, you may want to deselect auto baking at the bottom of the Lighting pane. Be sure to use the Bake button when you want to test your lights.</li>
+            </ul>
+            <p>NORMAL MAPS</p>
+            <ul>
+                <li>Unity supports bump mapping through the use of normal maps</li>
+                <li>In addition a greyscale image can be used as a height map to provide extra dimension (More expensive performance)</li>
+                <li>Like textures, normal maps can be exported through your 3D modeling software or created by standalone tools (Photoshop, xNormal)</li>
+                <li>Unlike textures, they need to be converted when imported by changing the type from 'Texture' to 'Normal Map' and re-importing</li>
+                <li>It's possible to use mismatching Albedo textures and normal maps</li>
+            </ul>
+            <p>LIGHT COOKIES</p>
+            <ul>
+                <li>Cookies can make your lights look better</li>
+                <li>Use a grayscale image as a texture (lighter areas emit light) for spotlights and direction lights. Create a cubemap for point lights.</li>
+                <li>Cookies can only be used on non-static lights</li>
+                <li>IES asset (free download of 4 light cookies)</li>
+            </ul>
+
+            <p>EMISSIVE MATERIALS</p>
+            <ul>
+                <li>Can be used to emit lights</li>
+                <li>Grayscale textures can be used as emission </li>
+                <li>Scale the emission value above 1 for HDR (glowy results)</li>
+                <li>GameObjects must be static for their emitted light to affect other surfaces</li>
+            </ul>
+            <p>VOLUMETRIC LIGHTING</p>
+            <ul>
+                <li>Fantastic scripts you can use to create volumetric lighting with spotlights can be found here (<a href="https://github.com/robertcupisz/LightShafts">link</a>)</li>
+                <li>NOTE: These may have serious impact on your game's performance</li>
+            </ul>
+            <p>IMAGE EFFECTS</p>
+            <ul>
+                <li>Download Standard Assets from Unity's website (<a href="https://www.assetstore.unity3d.com/en/#!/content/32351">link</a>)</li>
+                <li>After installing, you can add Image Effects from Assets > Import Package</li>
+                <li>Image effects are placed on cameras</li>
+                <li>Use these for good, not evil.</li>
+            </ul>
+            <p>LIGHT PROBES</p>
+            <ul>
+                <li>Light Probe documentation (<a href="https://docs.unity3d.com/Manual/LightProbes.html">link</a>)</li>
+            </ul>
+
+
+        </div>
+        <div class="content">
+            <h1>HOMEWORK</h1>
+
+            <h2>NO CLASS: FALL BREAK (10/15-18)</h2>
+            <ul>
+                <li>Take a break.</li>
+                <li>No work during Fall break.</li>
+            </ul>
+
+            <h2>MIDTERM PROJECT: CONTINUE WORKING</h2>
+            <p>Project Due: 10/25</p>
+            <ul>
+                <li><strong>Projects are due by 10:00 a.m. next class</strong></li>
+                <li>Have a tested, playable build on one computer (no playing from the editor) and controllers for players.</li>
+                <li>Delegate tasks and schedule one group meeting before leaving this afternoon.</li>
+            </ul>
+
+            <h2>MIDTERMS PROJECT: MEETINGS</h2>
+            <p>I would like to check project progress after the Fall break.</p>
+            <ul>
+                <li>15 minute meetings.</li>
+                <li>Before you leave, set a meeting day and time with me. (10/19: 4-5, 10/20: 3-5, 10/21: 9-5, 10/24: 9-5)</li>
+                <li>I don not need to meet with the entire group.</li>
+            </ul>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

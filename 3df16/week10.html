@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D GAME DESIGN: FALL '16</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <div id="contentheader">
+                <h1><a href="index.html">3D GAME DESIGN: FALL '16</a></h1>
+                <ul>
+                    <li>Instructor: Sam Sheffield (<a href="mailto:ssheffield@mica.edu">ssheffield@mica.edu</a>)</li>
+                    <li>This Site (Short URL): <a href="http://tiny.cc/3df16">tiny.cc/3df16</a></li>
+                    <li>Online syllabus: <a href="docs/f16/Sheffield_Sam_3D_Game_Design_Fall16.pdf">syllabus.pdf</a></li>
+                    <li>Code repository: <a href="https://github.com/samsheffield/3D_Game_Design">github.com</a></li>
+                    <li>Unity C# Cheat Sheet: <a href="https://gist.github.com/samsheffield/96608e465091069d15fdaea29457ec85">gist.github.com</a></li>
+                </ul>
+            </div>
+            <h1>11/1: NAVIGATION SYSTEM BASICS</h1>
+            <h2>TODAY:</h2>
+            <p>Good morning</p>
+            <ol>
+                <li>Missing some self/peer reviews</li>
+                <li>Intro to NavMesh baking</li>
+                <li>Working with the NavMesh Agent component (move to &amp; patrol behaviors)</li>
+                <li>Generating NavMesh OffMesh Links</li>
+                <li>Dynamically carving Nav Mesh with the NavMesh Obstacle component</li>
+                <li>Creating a basic FSM (Finite State Machine) to create patterns of behavior for NavMesh agents</li>
+            </ol>
+
+            <h2>UNITY 3D: NAVIGATION SYSTEM BASICS</h2>
+            <p><strong>Demo materials available <a href="docs/Unity3D_6.zip">here</a>.</strong> </p>
+            <ul>
+                <li>Unity has surprisingly good documentation on the Navigation System in its <a href="https://docs.unity3d.com/Manual/Navigation.html">manual</a> &amp; <a href="https://unity3d.com/learn/tutorials/topics/navigation">tutorial</a> pages</li>
+            </ul>
+
+            <h2>WORKING WITH NAVMESHES</h2>
+            <p>A Navigational Mesh is a data structure which describes the walkable surfaces of the game world and allows finding a path from one walkable location to another.</p>
+            <ul>
+                <li>Enable the Navigation window: Window > Navigation</li>
+                <li>NavMesh baking: The process of creating a nav mesh in Unity.</li>
+                <li>Baking &amp; Clearing: NavMeshes can be generated &amp; cleared with these buttons. The NavMeshes are stored in Assets/Name_Of_Scene.</li>
+                <li>Navigation Static: All gameobjects must be set to Navigation Static to be included in NavMesh baking.</li>
+                <li>Carving: Navigation Static gameobjects punch holes in the mesh through a process known as carving.</li>
+                <li>A nav mesh is an approximation of the walkable surface. Sometimes you have to leave a little extra room.</li>
+                <li>Min Region: NavMesh regions with surface area smaller than this number will be culled away.</li>
+                <li>Height Map: Enabling the Bake setting, Height Map, can improve vertical fidelity (at cost of performance).</li>
+            </ul>
+
+            <h2>NAVMESH AGENT COMPONENT</h2>
+            <p>The NavMesh Agent component handles both the pathfinding and the movement control of a character.</p>
+            <ul>
+                <li>NavMesh Agents will create paths to goals within the Nav Mesh.</li>
+                <li>Avoidance: NavMesh Agents will avoid obstacles &amp; other agents.</li>
+                <li>A*: Unity's NavMesh Agent component uses the A* algorithm to pathfind.</li>
+                <li>Positioning: NavMesh Agents should be positioned at their base. If not, adjust the offset property to compensate.</li>
+            </ul>
+
+            <h2>OFF-MESH LINKS</h2>
+            <p></p>
+            <ul>
+                <li>Links can either be generated or manually created</li>
+                <li>Generate: Select Generate Off-mesh Links in Navigation > Object for each gameobject. </li>
+                <li>Bake: Set Drop Height &amp; Jump Distance before baking</li>
+                <li>Drop Height &amp; Jump Distance: These distances should be exaggerated slightly to account for small deviations created in baking process.</li>
+                <li>Manual creation: Create start &amp; end point gameobjects &amp; attach the OffMesh Link component to one.</li>
+                <li>Placing start &amp; end points: You want solid black rings &amp; line. If it is faded, or a ring is missing, adjust access point closer to the surface.</li>
+            </ul>
+
+            <h2>NAVMESH OBSTACLE COMPONENT</h2>
+            <p>The NavMesh Obstacle component allows you to describe moving obstacles that the agents should avoid while navigating the world.</p>
+            <ul>
+                <li>Add this component to any non-static gameobject that you want the NavMesh Agent to avoid.</li>
+                <li>Carve only stationary: While moving, agents will try to avoid, but once it is stationary, it will carve a hole in the Nav Mesh, forcing an agent to find a different path.</li>
+                <li>Carve when moved: If unselected, a gameobject will continuously carve the Nav Mesh. Only ideal for large, slow moving obstacles.</li>
+                <li>Time to stationary: Sets the delay used before re-carving Nav Mesh.</li>
+            </ul>
+
+            <h2>BEHAVIORS</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=QNUib1YcgyY">How we imagine AI...</a></li>
+                <li>Magic tricks!</li>
+                <li>Complex AI is still, generally, quite dumb and rigid (<a href="https://www.youtube.com/watch?v=cuybLsAFoLk">link</a>) and (<a href="https://www.youtube.com/watch?v=uVLkXdg2cfs">link</a>)</li>
+                <li>Evolutionary AI: Karl Sims' Evolved virtual creatures from 1994 (<a href="https://www.youtube.com/watch?v=JBgG_VSP7f8">link</a>), MarI/O (<a href="https://www.youtube.com/watch?v=uVLkXdg2cfs">link</a>) </li>
+                <li>The simple AI of Pac-Man's ghosts (<a href="http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior">text</a>) and (<a href="https://www.youtube.com/watch?v=xMEjovSlyqs">video</a>)</li>
+                <li>"When we analyze a mechanism, we tend to overestimate its complexity" - <a href="https://www.google.com/search?q=valentino+braitenberg+vehicles&safe=active&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjdg8fS-IfQAhUH64MKHbfEAzMQ_AUICSgC&biw=748&bih=852#imgrc=gE9E1c8aU_xZfM%3A">Vehicles</a>, Valentine Braitenberg</li>
+            </ul>
+
+        </div>
+        <div class="content">
+            <h1>HOMEWORK</h1>
+
+            <h2>RELATIONSHIP (DUE NEXT WEEK)</h2>
+            <p>Working with a combination textured primitives &amp; imported 3D assets, create a space for two types of agents/characters to interact in an interesting way. These can be controlled by a player or simulated and autonomous.</p>
+            <p>Technical Requirements</p>
+            <ul>
+                <li>Use of NavMesh &amp; NavMesh Agent</li>
+                <li>One use of NavMesh Obstacle component (door from example is ok, but include at least one non-door as well)</li>
+                <li>Minimum of two types of agents with different behaviors (overlapping behaviors ok)</li>
+            </ul>
+            <p>You may work with a partner on this one (or not!). If so, both of you must contribute equally to the coding &amp; prototyping.</p>
+
+            <h2>WALTERS ART MUSEUM GAME NIGHT</h2>
+            <p>We've partnered up with the Walters Art Museum for a night of games. Come play some tabletop &amp; physical games (including student games!) related to medieval game mechanics. Please come!</p>
+            <ul>
+                <li>Thursday, from 5-9 pm</li>
+                <li>No dress code.</li>
+                <li>Free!</li>
+            </ul>
+
+            <h2>PLAY: 3D MARIOS</h2>
+            <p>Please delete your save files after finishing!</p>
+            <p>
+                These are installed in BR217:
+            </p>
+            <ul>
+                <li>Super Mario 64 (N64)</li>
+                <li>Super Mario Sunshine (GameCube)</li>
+                <li>Super Mario Galaxy (Wii U in IA lounge)</li>
+            </ul>
+
+            <p>Some context:</p>
+            <ul>
+                <li>Translation of an interview with Super Mario 64 developers from 1996 (<a href="http://shmuplations.com/mario64/">link</a>)</li>
+                <li>Super Mario Sunshine developer interview (<a href="http://www.gamecubicle.com/interview-super_mario_sunshine.htm">link</a>)</li>
+                <li>Iwata Asks: Super Mario Galaxy post-mortem (<a href="https://www.nintendo.co.uk/Iwata-Asks/Iwata-Asks-Super-Mario-Galaxy/Volume-1-The-Producer-and-Director/1-How-Super-Mario-Galaxy-Was-Born/1-How-Super-Mario-Galaxy-Was-Born-230044.html">link</a>)</li>
+                <li>Yoshiaki Koizumi on sneaking stories past Miyamoto (<a href="https://www.wired.com/2007/12/interview-super/">link</a>)</li>
+                <li>Game Maker's Toolkit: Super Mario 3D World's 4 Step Level Design (<a href="https://www.youtube.com/watch?v=dBmIkEvEBtA">link</a>)</li>
+                <li>The Pressure To Create the Perfect Controller (<a href="https://dromble.wordpress.com/2013/09/29/the-pressures-to-create-the-perfect-controller/">link</a>)</li>
+            </ul>
+
+            <h2>WRITING: GAMEPLAY + EXPERIENCE (DUE START OF CLASS NEXT WEEK)</h2>
+            <p>For your assigned game:</p>
+            <ul>
+                <li>Pick one mechanic, dynamic, or aesthetic which you feel is successfully handled by the game (please refer to <a href="http://samsheffield.com/mica/gp2s16/docs/mda.pdf">MDA framework</a> for details)</li>
+                <li>Explain how your choice functions in the game and why it seems like an important, or interesting, design choice to you.</li>
+                <li>Describe your experience playing this game. Does anything surprise you? How does it differ from the modern games which it inspired?</li>
+                <li>250-500 words, any digital format, uploaded to class Drive.</li>
+            </ul>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
