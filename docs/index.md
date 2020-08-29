@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## 3D Game Design (GMD 312.01)
 
-You can use the [editor on GitHub](https://github.com/samsheffield/3D_Game_Design/edit/Fall_20/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### About
+This is the archive for 3D Game Design, taught in the Game Design program at the Maryland Institute College of Art in 2020 by Sam Sheffield (ssheffield@mica.edu). It is primarily intended for student use, but if what you find seems helpful to you, enjoy! Maybe drop me a line and say Hi.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Course Description
+In this studio course, students will build on game design and programming skills developed in 2D Game Design. Throughout the semester, students will produce small,
+personally-directed game prototypes, both collaboratively and individually. Studio work will be supplemented by readings and discussions further exploring contemporary cultural issues surrounding digital games.
 
-### Markdown
+#### This Semester
+The focus will be on prototyping and becoming familiar with Unity’s 3D workflow.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Next Semester (Advanced 3D Game Design)
+The focus will be on expanding our worldbuilding toolkit and exploring more of Unity's advanced 3D features. 
 
-```markdown
-Syntax highlighted code block
+### Course Goals
+- Learn to design, prototype, and distribute 3D games built with Unity
+- Work with in-engine & external assets such as ProBuilder, Cinemachine, and Rewired to prototype 3D games.
+- Communicate & present game designs from concept to finished form.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/samsheffield/3D_Game_Design/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Student Learning Outcomes
+- Students will understand how to build, test, and evaluate 3D digital games using an iterative design approach.
+- Students will learn how to manage design and production in a team based environment.
+- Students will analyze games as complex interactive systems.
+- Students will gain skills in communicating and presenting their ideas from concept to finished form.
