@@ -24,7 +24,7 @@ Uncharted 4 finished game footage: https://www.youtube.com/watch?v=3spSshYUvOU
 - Uncharted 3 Roof Collapse Iteration https://www.youtube.com/watch?v=dBLEbJEjE8Q
 - Uncharted 4 Ending Truck Chase Blockout Comparison: https://www.youtube.com/watch?v=NlCUfqG0Jso&t=33s
 
-__HOMEWORK__
+__HOMEWORK 1__
 
 __Building Blocks (DUE IN TWO WEEKS (09/24), First Pass at Greybox NEXT WEEK)__  
 Using only Unity's built-in 3D primitives, create a fun & challenging single level prototype using the ball rolling prototypes demoed in class over the next two weeks.
@@ -53,3 +53,28 @@ Have your first pass at a greyboxed level ready to discuss next week (09/17). __
 
 __Two Weeks:__  
 The finished prototypes  will be uploaded at the start of class in two weeks (09/24).
+  
+__HOMEWORK 2__
+
+__Written Game Response (Due 09/17)__  
+
+You have two options. __Choose one!__:
+-- Option 1: Classic 3D Game Response
+-- Option 2: Personal Classic 3D Game Response
+
+__ Option 1__
+Play one of these two early 3D videogames (1 hour minimum) and write a brief response to it:  
+- Describe your experience playing this game. Does anything surprise you? How does it differ from the modern games which it inspired?
+- Try to focus on specific game design choices that you feel contribute in meaningful (even if negative) ways to the game playing experience.
+
+__Option 2__
+Choose one of the first 3D videogames which you remember playing and write a brief response to it:
+- Try to play the game again, but if not watch some videos to help you recall specific details.
+- Describe your experience playing this game. Does anything surprise you? How does it differ from the modern games which it inspired?
+- Try to focus on specific game design choices that you feel contribute in meaningful (even if negative) ways to the game playing experience.
+
+__Next Week:__  
+A digital document needs to be shared to your Gogle Drive folder by the start of class next week (09/17). I'm not particularly interested in grammar or spelling, but please focus on clearly communicating your ideas and reach out the LRC if you need writing assistance. You can choose the length (or if you can't, you can just write a page!)
+
+
+
