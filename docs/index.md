@@ -30,3 +30,4 @@ This is the software used in the demos for this class (Updated:08/28)
 
 ## Weekly Class Notes
 - [Week 1: Welcome, Class Overview, Q&A](week1.md)
+- [Week 2: Rolling Ball Demo 1, Greyboxing](week2.md)
