@@ -31,3 +31,6 @@ This is the software used in the demos for this class (Updated:08/28)
 ## Weekly Class Notes
 - [Week 1: Welcome, Class Overview, Q&A](week1.md)
 - [Week 2: Rolling Ball Demo 1, Greyboxing](week2.md)
+- [Week 3: Lighting & Camera Demo 2](week3.md)
+- Week 4: DOOM is a Dance, Early 3D Games
+- [Week 5: First Person Controllers Demo 3](week5.md)
