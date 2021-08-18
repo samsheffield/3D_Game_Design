@@ -1,4 +1,4 @@
-## CLASS NOTES(10/17)
+## CLASS NOTES (12/17)
 
 __TODAY__
 - Playtesting final prototypes
