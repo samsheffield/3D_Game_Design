@@ -16,12 +16,9 @@ __NEXT WEEK__
 - Discuss weekend prototype playtesting format
 
 __HOMEWORK__
-Game Designer In Residence Twitch Stream Today at 3!
-Yann Seznec will be streaming weekly on Twitch
-Thursdays 3-4
-Check it out here! twitch.tv/micagamelab
-Begin Personal Space Prototype (Due next week on  10/15)
-Use ProBuilder and Unity's 3D primitives to build a prototype of a small interior 3D environment, explored and interacted with in first person perspective. The player's goal is to reach a destination through environmental cues.
+
+- Begin Personal Space Prototype (Due next week on  10/15)
+- Use ProBuilder and Unity's 3D primitives to build a prototype of a small interior 3D environment, explored and interacted with in first person perspective. The player's goal is to reach a destination through environmental cues.
 
 __Requirements:__
 - Sketches -> greyboxing -> playable prototype
@@ -35,7 +32,9 @@ __Requirements:__
 - Instructions!
 
 __Also__
+
 Make sure your prototypes include some sort of basic instruction on how to control/play. This doesn't need to be beautifully designed, but we should make sure that everyone knows the basics when they sit down to test your game for homework.
 
 __Next Week:__
+
 Mac and PC builds of your finished prototype need to be uploaded by the start of class next week (10/15). Work is due at this time even if you can't attend our group meeting. 
