@@ -7,7 +7,7 @@ __A LITTLE REST THIS WEEK__
 
 Let's take some time this week to recharge. Take a break, make something for fun, spend some more time with Blender. It's your time!
 
-__MIDTERM MEETINGS_
+__MIDTERM MEETINGS__
 
 I've set up a schedule for 20 minute check-in meetings today:
 
