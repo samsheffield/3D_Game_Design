@@ -34,3 +34,13 @@ This is the software used in the demos for this class (Updated:08/28)
 - [Week 3: Lighting & Camera Demo 2](week3.md)
 - Week 4: DOOM is a Dance, Early 3D Games
 - [Week 5: First Person Controllers Demo 3](week5.md)
+- [Week 6: Probuilder Introduction](week6.md)
+- [Week 7: How Portal teaches, exporting fbx for Unity](week7.md)
+- [Week 8: Break, 1-on-1 Meetings](week8.md)
+- [Week 9: Lightmapping, Cinemachine Freelook Camera](week9.md)
+- [Week 10: #rd Person Mechanics, How jumping works](week10.md)
+- [Week 11: World Space UI, Textures, Billboarding](week11.md)
+- [Week 12: Navmesh Demo, Some AI](week12.md)
+- Week 13: Work Session
+- [Week 14: Playtesting Prototype Alphas](week14.md)
+- [Week 15: Playtesting Prototype Finals](week15.md)
